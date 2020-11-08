@@ -1,21 +1,21 @@
 **Pinhead** is a simple Discord bot that pins messages to a specific channel. This is a
 workaround for Discord's per-channel 50 pin limit.
 
+(SVC fork to ease setting up by someone else for potted plant)
+
 # Installation
 
-1. `git clone https://github.com/RoyCurtis/Pinhead.git pinhead && cd pinhead`
+1. `git clone https://github.com/sweth/Pinhead.git pinhead && cd pinhead`
 1. `npm install` - Installs dependencies
-1. Copy `config.yml.example` to `config.yml` and fill in the required values
 1. `node index.js` - Runs the bot
-1. Setup a specific role (e.g. `pinner`) to allow users to pin messages
-    * This is optional; leave `role` blank to allow anybody to pin
-1. Setup a custom emoji, or specify a built-in emoji, to use as the pin trigger reaction
-1. Setup the target channel as a _text_ channel (e.g. `#memes`)
+
+See https://github.com/RoyCurtis/Pinhead for more general install notes
 
 # Usage
 
-1. User sees amusing message and reacts to it using the configured superpin emoji
-1. Bot goes ahead and copies the message to the configured channel
+1. User posts something that needs feedback, and reacts to it with :feedbackpin: emoji
+1. Bot goes ahead and copies the message to #feedback-queue
+1. AutoDelete bot at https://top.gg/bot/314230903872421889 will delete copy in #feedback-queue after 7 days
 
 # Limitations
 
