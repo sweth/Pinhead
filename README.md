@@ -8,6 +8,7 @@ workaround for Discord's per-channel 50 pin limit.
 1. `git clone https://github.com/sweth/Pinhead.git pinhead && cd pinhead`
 1. `npm install` - Installs dependencies
 1. `node index.js` - Runs the bot
+1. expose bot to internet
 
 See https://github.com/RoyCurtis/Pinhead for more general install notes
 
